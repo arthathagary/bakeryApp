@@ -15,12 +15,12 @@
             android:id="@+id/btnCallLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CALL LOGIN" />
+            android:text="LOGIN" />
 
         <Button
             android:id="@+id/btnCallRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CALL REGISTER" />
+            android:text="REGISTER" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

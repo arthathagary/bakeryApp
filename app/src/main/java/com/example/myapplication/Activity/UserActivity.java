@@ -11,7 +11,7 @@ import com.example.myapplication.R;
 
 public class UserActivity extends AppCompatActivity {
 
-    Button ButtonCallInvoice, ButtonCallSearchProducts,ButtonViewProducts;
+    Button ButtonCallInvoice, ButtonCallSearchProducts,ButtonViewProducts,ButtonViewOrders;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +19,8 @@ public class UserActivity extends AppCompatActivity {
         setContentView(com.example.myapplication.R.layout.activity_user);
 
         ButtonCallInvoice=(Button) findViewById(R.id.btnCall_Invoice);
-        ButtonCallSearchProducts=(Button) findViewById(R.id.btnCall_SearchProducts);
         ButtonViewProducts=(Button) findViewById(R.id.btn_view_products);
-
+        ButtonViewOrders=(Button) findViewById(R.id.btn_view_orders);
         ButtonCallInvoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +34,14 @@ public class UserActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentViewProducts = new Intent(UserActivity.this, ViewProductsActivity.class);
                 startActivity(intentViewProducts);
+            }
+        });
+
+        ButtonViewOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentViewOrders = new Intent(UserActivity.this, ViewOrdersActivity.class);
+                startActivity(intentViewOrders);
             }
         });
     }

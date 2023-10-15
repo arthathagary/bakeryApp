@@ -19,18 +19,20 @@
             android:id="@+id/btnCall_Invoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Call Invoice" />
+            android:text="Search And Buy" />
 
-        <Button
-            android:id="@+id/btnCall_SearchProducts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Call Search Products" />
+
 
         <Button
             android:id="@+id/btn_view_products"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View Products" />
+
+        <Button
+            android:id="@+id/btn_view_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Orders" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

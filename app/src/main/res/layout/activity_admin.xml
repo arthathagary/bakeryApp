@@ -15,12 +15,18 @@
             android:id="@+id/btnCallCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Call Category" />
+            android:text="Manage Category" />
 
         <Button
             android:id="@+id/btnCallProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Call Product" />
+            android:text="Manage Product" />
+
+        <Button
+            android:id="@+id/btnViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Orders" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
