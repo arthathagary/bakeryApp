@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class AdminActivity extends AppCompatActivity {
 
-    Button ButtonCallCategory, ButtonCallProduct,ButtonViewOrders,DeleteProduct;
+    Button ButtonCallCategory, ButtonCallProduct,ButtonViewOrders,DeleteProduct,DeleteCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class AdminActivity extends AppCompatActivity {
         ButtonCallProduct=(Button) findViewById(R.id.btnCallProduct);
         ButtonViewOrders=(Button) findViewById(R.id.btnViewOrders);
         DeleteProduct=(Button) findViewById(R.id.btnDeleteProduct);
+        DeleteCategory=(Button) findViewById(R.id.btnDeleteCategory);
 
 
         ButtonCallCategory.setOnClickListener(view -> {
@@ -41,6 +42,11 @@ public class AdminActivity extends AppCompatActivity {
         DeleteProduct.setOnClickListener(view -> {
             Intent intentDeleteProduct = new Intent(AdminActivity.this,DeleteProductActivity.class);
             startActivity(intentDeleteProduct);
+        });
+
+        DeleteCategory.setOnClickListener(view -> {
+            Intent intentDeleteCategory = new Intent(AdminActivity.this,DeleteCategoryActivity.class);
+            startActivity(intentDeleteCategory);
         });
     }
 }

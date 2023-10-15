@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.2347305297851563" />
         <entry key="app/src/main/res/layout/activity_category.xml" value="0.14375" />
+        <entry key="app/src/main/res/layout/activity_delete_category.xml" value="0.22509057971014493" />
         <entry key="app/src/main/res/layout/activity_delete_product.xml" value="0.19701086956521738" />
         <entry key="app/src/main/res/layout/activity_invoice.xml" value="0.14375" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.14375" />

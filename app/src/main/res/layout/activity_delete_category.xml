@@ -5,54 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activity.AdminActivity">
+    tools:context=".Activity.DeleteCategoryActivity">
 
     <LinearLayout
-        android:layout_width="283dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_delete_category_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter category id"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
 
         <Button
-            app:cornerRadius="48dp"
-            android:id="@+id/btnCallCategory"
+            android:id="@+id/deleteCategoryButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Add Category" />
+            app:cornerRadius="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Delete" />
 
         <Button
-            app:cornerRadius="48dp"
-            android:id="@+id/btnDeleteCategory"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="16dp"
-            android:layout_height="wrap_content"
-            android:text="Delete Category" />
-
-        <Button
-            app:cornerRadius="48dp"
-            android:id="@+id/btnCallProduct"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="16dp"
-            android:layout_height="wrap_content"
-            android:text="ADD Product" />
-
-        <Button
-            app:cornerRadius="48dp"
-            android:id="@+id/btnDeleteProduct"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="16dp"
-            android:layout_height="wrap_content"
-            android:text="Delete Product" />
-
-        <Button
-            app:cornerRadius="48dp"
-            android:id="@+id/btnViewOrders"
+            android:id="@+id/btn_view_d_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Orders" />
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="View Category"
+            app:cornerRadius="48dp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

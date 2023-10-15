@@ -48,4 +48,12 @@ public class DBConnector extends SQLiteOpenHelper {
         cursor = db.rawQuery(query,null);
         return cursor;
     }
+
+    public Cursor deleteCategory(String id){
+        String query = "DELETE FROM Category WHERE CategoryID = '"+id+"'";
+        Cursor cursor = null;
+        SQLiteDatabase db = this.getWritableDatabase();
+        cursor = db.rawQuery(query,null);
+        return cursor;
+    }
 }
