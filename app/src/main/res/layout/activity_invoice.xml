@@ -4,79 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".Activity.InvoiceActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="298dp"
+        android:layout_height="555dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/txt_I_ProductId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Enter Product ID"
             android:inputType="textPersonName"
-            android:hint="Enter Product ID" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/txt_I_ProductName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Product Name"
             android:inputType="textPersonName"
-            android:hint="Product Name" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/txt_I_Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Category"
             android:inputType="textPersonName"
-            android:hint="Category" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/txt_I_Price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Price"
             android:inputType="textPersonName"
-            android:hint="Price" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/txt_I_Qty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Quantity"
             android:inputType="textPersonName"
-            android:hint="Quantity" />
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btn_I_SearchProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="SEARCH PRODUCT" />
 
         <EditText
             android:id="@+id/txt_I_InvoiceId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Enter Invoice ID"
             android:inputType="textPersonName"
-            android:hint="Enter Invoice ID" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/txt_I_BuyQty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="Enter Buy Quantity"
             android:inputType="textPersonName"
-            android:hint="Enter Buy Quantity" />
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btn_I_Buy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="BUY" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

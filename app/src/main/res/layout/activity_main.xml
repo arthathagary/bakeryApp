@@ -8,26 +8,28 @@
     tools:context=".Activity.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btnCallLogin"
-            android:layout_width="285dp"
-            android:layout_height="92dp"
-            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
             android:layout_marginBottom="16dp"
+            android:text="LOGIN"
             app:cornerRadius="48dp" />
 
         <Button
             android:id="@+id/btnCallRegister"
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="95dp"
             android:text="REGISTER"
             app:cornerRadius="48dp" />
     </LinearLayout>
