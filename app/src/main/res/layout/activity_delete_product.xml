@@ -43,11 +43,11 @@
         <Button
             android:id="@+id/btn_view_d_product"
             android:layout_width="match_parent"
-            app:cornerRadius="48dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:text="View Products" />
+            android:text="View Products"
+            app:cornerRadius="48dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
