@@ -15,13 +15,19 @@
             android:id="@+id/btnCallCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Manage Category" />
+            android:text="Add Category" />
 
         <Button
             android:id="@+id/btnCallProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Manage Product" />
+            android:text="ADD Product" />
+
+        <Button
+            android:id="@+id/btnDeleteProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Product" />
 
         <Button
             android:id="@+id/btnViewOrders"

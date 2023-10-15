@@ -40,4 +40,12 @@ public class DBConnector extends SQLiteOpenHelper {
         cursor = db.rawQuery("select * from Invoice",null);
         return cursor;
     }
+
+    public Cursor deleteProduct(String id){
+        String query = "DELETE FROM Product WHERE ProductID = '"+id+"'";
+        Cursor cursor = null;
+        SQLiteDatabase db = this.getWritableDatabase();
+        cursor = db.rawQuery(query,null);
+        return cursor;
+    }
 }
