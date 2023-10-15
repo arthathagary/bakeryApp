@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    tools:context=".Activity.ViewOrdersActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idInvoiceViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp"
+            android:text="Invoice Id"
+            android:textColor="@color/black"
+            android:background="#B6DADA"
+            android:textStyle="bold"
+            />
+        <!--text view for our course name-->
+        <TextView
+            android:id="@+id/idProductViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp"
+            android:text="Product Id"
+            android:textColor="@color/black"
+            android:background="#B6DADA"
+            android:textStyle="bold"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--text view for our course tracks-->
+            <TextView
+                android:id="@+id/idProductQuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="12dp"
+                android:text="Product Quantity"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="#B6DADA"
+                />
+
+
+            <!--text view for our course duration-->
+
+
+        </LinearLayout>
+
+        <!--text view for our course description-->
+        <TextView
+            android:id="@+id/idProductAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp"
+            android:textStyle="bold"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:background="#B6DADA"
+            />
+
+        <!-- Right side: Button -->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/txt_Enter_quantity"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:hint="Enter Quantity"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:paddingTop="12dp"-->
+        <!--            android:paddingLeft="16dp"-->
+        <!--            android:paddingRight="16dp"-->
+        <!--            android:paddingBottom="12dp"-->
+        <!--            android:inputType="number"-->
+        <!--            />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/idProductTotalPrice"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:paddingTop="12dp"-->
+        <!--            android:paddingLeft="16dp"-->
+        <!--            android:paddingRight="16dp"-->
+        <!--            android:paddingBottom="12dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:text="Total Price"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:background="#B6DADA" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_buyNow"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:paddingLeft="16dp"-->
+        <!--            android:paddingTop="12dp"-->
+        <!--            android:paddingRight="16dp"-->
+        <!--            android:paddingBottom="12dp"-->
+        <!--            android:text="Buy" />-->
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

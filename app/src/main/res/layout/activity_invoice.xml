@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.InvoiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_I_ProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Product ID" />
+
+        <EditText
+            android:id="@+id/txt_I_ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Product Name" />
+
+        <EditText
+            android:id="@+id/txt_I_Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Category" />
+
+        <EditText
+            android:id="@+id/txt_I_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Price" />
+
+        <EditText
+            android:id="@+id/txt_I_Qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Quantity" />
+
+        <Button
+            android:id="@+id/btn_I_SearchProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH PRODUCT" />
+
+        <EditText
+            android:id="@+id/txt_I_InvoiceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Invoice ID" />
+
+        <EditText
+            android:id="@+id/txt_I_BuyQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Buy Quantity" />
+
+        <Button
+            android:id="@+id/btn_I_Buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUY" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
