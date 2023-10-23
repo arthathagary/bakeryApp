@@ -2,6 +2,7 @@ package com.example.myapplication.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,14 @@ public class DeleteCategoryActivity extends AppCompatActivity {
                 }
             }
     });
+
+        ViewCategoryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentViewCategories = new Intent(DeleteCategoryActivity.this, ViewCategoriesActivity.class);
+                startActivity(intentViewCategories);
+            }
+        });
 
 
 

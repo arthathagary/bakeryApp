@@ -41,6 +41,14 @@ public class DBConnector extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor getAllCategory(){
+        String query = "SELECT * FROM Category";
+        Cursor cursor = null;
+        SQLiteDatabase db = this.getWritableDatabase();
+        cursor = db.rawQuery("select * from Category",null);
+        return cursor;
+    }
+
     public Cursor deleteProduct(String id){
         String query = "DELETE FROM Product WHERE ProductID = '"+id+"'";
         Cursor cursor = null;
