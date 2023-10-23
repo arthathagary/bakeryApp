@@ -66,7 +66,7 @@ public class InvoiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 dbHelper.BuyProduct(EditTextProductId.getText().toString(), Integer.parseInt(EditTextBuyQuantity.getText().toString()));
 
-                int Total = Integer.parseInt(EditTextBuyQuantity.getText().toString())* Integer.parseInt(EditTextBuyQuantity.getText().toString());
+                int Total = Integer.parseInt(EditTextPrice.getText().toString())* Integer.parseInt(EditTextBuyQuantity.getText().toString());
 
                 int qty = Integer.parseInt(EditTextBuyQuantity.getText().toString());
 
@@ -74,7 +74,7 @@ public class InvoiceActivity extends AppCompatActivity {
 
                 if (dbHelper.InsertInvoice(invoice))
                 {
-                    Toast.makeText(getApplicationContext(), "Buy: "+EditTextProductId.getText().toString()+"Total"+Total, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Buy: "+EditTextProductName.getText().toString()+" Total"+Total, Toast.LENGTH_SHORT).show();
                 }
             }
         });

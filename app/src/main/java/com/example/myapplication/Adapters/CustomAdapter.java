@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>{
     Context context;
-    ArrayList<String> ProductID, ProductName, ProductPrice, ProductCategory;
+    ArrayList<String> ProductID, ProductName, ProductPrice, ProductQuantity;
 
-    public CustomAdapter(Context context, ArrayList<String> ProductID, ArrayList<String> ProductName, ArrayList<String> ProductPrice, ArrayList<String> ProductCategory){
+    public CustomAdapter(Context context, ArrayList<String> ProductID, ArrayList<String> ProductName, ArrayList<String> ProductPrice, ArrayList<String> ProductQuantity){
         this.context = context;
         this.ProductID = ProductID;
         this.ProductName = ProductName;
         this.ProductPrice = ProductPrice;
-        this.ProductCategory = ProductCategory;
+        this.ProductQuantity = ProductQuantity;
     }
 
 
@@ -39,7 +39,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.ProductID_txt.setText(String.valueOf(ProductID.get(position)));
         holder.ProductName_txt.setText(String.valueOf(ProductName.get(position)));
         holder.ProductPrice_txt.setText(String.valueOf(ProductPrice.get(position)));
-        holder.ProductCategory_txt.setText(String.valueOf(ProductCategory.get(position)));
+        holder.ProductQuantity_txt.setText(String.valueOf(ProductQuantity.get(position)));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView ProductName_txt, ProductPrice_txt, ProductCategory_txt, ProductID_txt;
+        TextView ProductName_txt, ProductPrice_txt, ProductQuantity_txt, ProductID_txt;
 
 
         public MyViewHolder(@NonNull View itemView) {
@@ -56,7 +56,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             ProductID_txt = itemView.findViewById(R.id.idProductId);
             ProductName_txt = itemView.findViewById(R.id.idProductName);
             ProductPrice_txt = itemView.findViewById(R.id.idProductPrice);
-            ProductCategory_txt = itemView.findViewById(R.id.idProductCategory);
+            ProductQuantity_txt = itemView.findViewById(R.id.idProductQuantity);
         }
     }
 }

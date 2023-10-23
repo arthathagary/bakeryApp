@@ -46,8 +46,8 @@ public class ViewOrdersActivity extends AppCompatActivity {
             while (cursor2.moveToNext()){
                 InvoiceID.add("Invoice ID ->  "+cursor2.getString(0));
                 ProductID.add("Product ID ->  "+cursor2.getString(1));
-                ProductQuantity.add("Product Quantity ->  "+cursor2.getString(3));
-                ProductAmount.add("Product Amount ->  "+cursor2.getString(2));
+                ProductQuantity.add("Product Quantity ->  "+cursor2.getString(2));
+                ProductAmount.add("Product Amount ->  "+cursor2.getString(3));
             }
         }
     }

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class ViewProductsActivity extends AppCompatActivity {
     DBConnector dbConnector;
-    ArrayList<String> ProductID, ProductName, ProductPrice, ProductCategory;
+    ArrayList<String> ProductID, ProductName, ProductPrice, ProductQuantity;
     CustomAdapter customAdapter;
 
     RecyclerView recyclerView;
@@ -31,10 +31,10 @@ public class ViewProductsActivity extends AppCompatActivity {
         ProductID = new ArrayList<>();
         ProductName = new ArrayList<>();
         ProductPrice = new ArrayList<>();
-        ProductCategory = new ArrayList<>();
+        ProductQuantity = new ArrayList<>();
 
         storeDataInArrays();
-        customAdapter = new CustomAdapter(ViewProductsActivity.this, ProductID, ProductName, ProductPrice, ProductCategory);
+        customAdapter = new CustomAdapter(ViewProductsActivity.this, ProductID, ProductName, ProductPrice, ProductQuantity);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(ViewProductsActivity.this));
     }
@@ -47,7 +47,7 @@ public class ViewProductsActivity extends AppCompatActivity {
                 ProductID.add("Product ID ->  "+cursor.getString(0));
                 ProductName.add("Product Name ->  "+cursor.getString(1));
                 ProductPrice.add("Product Price ->  "+cursor.getString(3));
-                ProductCategory.add("Product Quantity ->  "+cursor.getString(2));
+                ProductQuantity.add("Product Quantity ->  "+cursor.getString(4));
             }
         }
     }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="190dp"
     android:background="@color/colorPrimary"
     tools:context=".Activity.ViewProductsActivity">
 
@@ -51,7 +51,7 @@
 
             <!--text view for our course tracks-->
             <TextView
-                android:id="@+id/idProductCategory"
+                android:id="@+id/idProductQuantity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="12dp"
@@ -64,12 +64,12 @@
                 android:textStyle="bold"/>
 
 
-            <!--text view for our course duration-->
+
 
 
         </LinearLayout>
 
-        <!--text view for our course description-->
+
         <TextView
             android:id="@+id/idProductPrice"
             android:layout_width="match_parent"
